@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/game.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  {{!-- <nav>
+    <h4>Node MySQL</h4>
+    <ul>
+      <li><a href="/">Home</a></li>
+      {{#if user }}
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/auth/logout">Logout</a></li>
+      {{else}}
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+      {{/if}}
+    </ul>
+  </nav> --}}
+  <main class="main">
+  <div class="settings__btn">
+    <span class="material-icons">
+    settings
+    </span>
+  </div>
+  <a href="/save">
+    <div class="settings__save">
+      <span class="material-icons">
+      save
+      </span>
+    </div>
+  </a>
+  </div>
+    <div class="bottom__bar">
+      <div class="bottom__bar-item">
+        <span class="material-icons">
+        shopping_cart
+        </span>
+        <p>Sklep</p>
+      </div>
+      <div class="bottom__bar-item">
+        <span class="material-icons">
+        people
+        </span>
+        <p>Zatrudnij pracownika</p>
+      </div>
+      <div class="bottom__bar-item">
+        <span class="material-icons">
+        poll
+        </span>
+        <p>Statystyki</p>
+      </div>
+      <div class="bottom__bar-item">
+        <span class="material-icons">
+        add
+        </span>
+        <p>Stwórz zlecenie</p>
+      </div>
+      <div class="bottom__bar-item">
+        <span class="material-icons">
+        account_circle
+        </span>
+        <p>Profil</p>
+      </div>
+    </div>
+
+    <div class="main__container">
+            {{#if user }}
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/auth/logout">Logout</a></li>
+      {{else}}
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+      {{/if}}
+    <h1 name="employed">10</h1>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+</body>
+</html>
